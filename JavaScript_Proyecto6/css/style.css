@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(255, 159, 127);
+}
+.puntaje{
+    /*Margen arriba*/
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    background-color: rgb(188, 183, 183);
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    /*Los comandos de las lineas 17 y 18 se utlizan para hacer un 
+    estilo de mascara dentro de item con la forma del vector */
+    -webkit-mask-image: url("../img/estrella.svg");
+    mask-image: url("../img/estrella.svg");
+}
+/*Clase adisional cuando se seleccione la estrella*/
+.item.selec{
+    background-color: rgb(255, 255, 255);
+}
